@@ -44,6 +44,10 @@ Toplam		20
 Yazıcıya özgü iletişim, adapters/ dizinindeki özel adaptörler aracılığıyla yürütülür.
 Ultimaker yazıcılar salt okunur izleme modunda çalışır. Raise3D adaptörü hazırdır ancak bu yazıcılara henüz bağlanılamamıştır; ayrıntılar Bilinen Sınırlamalar bölümündedir.
 
+
+
+
+
 Mimari
 ┌──────────────────────────────────────────┐
 │            Fiziksel Yazıcılar            │
@@ -71,6 +75,13 @@ Mimari
 │ Telemetri · Olaylar │  │  Chart.js · hls.js  │
 │   Üretim Kayıtları  │  │ Tarayıcı · Electron │
 └─────────────────────┘  └─────────────────────┘
+
+
+
+
+
+
+
 
 Sunucu, yazıcı yapılandırmasına göre her yazıcı için uygun adaptörü oluşturur. Her adaptör ortak bir arayüz uygular; böylece ana sunucu, farklı yazıcı markalarıyla onların kendi protokollerine bağımlı olmadan iletişim kurabilir.
 Kamera görüntüleri adaptörlerden bağımsız, ayrı bir kanaldan akar: Bambu Lab ve ZAXE yayınları sunucuda FFmpeg ile HLS biçimine dönüştürülür, Ultimaker ve Guider görüntüleri ise MJPEG olarak sunucu üzerinden arayüze aktarılır.
